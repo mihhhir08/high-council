@@ -1,0 +1,13 @@
+{
+  "name": "high-council",
+  "version": "1.0.0",
+  "description": "A council of adversarial agents that gives you one committed verdict on an idea. Blinded seats, a rebuttal round, a fact-checking jury, and a chairman who has to show the minority report.",
+  "author": {
+    "name": "Mihirsinh Chavda",
+    "url": "https://github.com/mihhhir08"
+  },
+  "homepage": "https://github.com/mihhhir08/high-council",
+  "repository": "https://github.com/mihhhir08/high-council",
+  "license": "MIT",
+  "keywords": ["decision-making", "multi-agent", "anti-sycophancy", "council", "verdict", "devils-advocate"]
+}

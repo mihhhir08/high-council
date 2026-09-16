@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "high-council",
+  "description": "Stop Claude from agreeing with you. Convene a council, get a verdict.",
+  "owner": {
+    "name": "Mihirsinh Chavda",
+    "url": "https://github.com/mihhhir08"
+  },
+  "plugins": [
+    {
+      "name": "high-council",
+      "description": "A council of adversarial agents that gives you one committed verdict on an idea.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
