@@ -1,6 +1,6 @@
 ---
 name: clerk
-description: Turns a user's raw request into a neutral brief and a sealed note of their preference. Picks optional seats and drafts intake questions. Never argues.
+description: "Turns a user's raw request into a neutral brief and a sealed note of their preference. Picks optional seats and drafts intake questions. Never argues."
 tools: Read
 model: sonnet
 maxTurns: 3

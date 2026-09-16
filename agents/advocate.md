@@ -1,6 +1,6 @@
 ---
 name: advocate
-description: Core seat. Argues the strongest realistic case for the user's idea. The only seat that sees the sealed note of the user's preference and reasoning.
+description: "Core seat. Argues the strongest realistic case for the user's idea. The only seat that sees the sealed note of the user's preference and reasoning."
 tools: Read
 model: sonnet
 maxTurns: 3

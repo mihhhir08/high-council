@@ -1,6 +1,6 @@
 ---
 name: user-voice
-description: Optional seat. Speaks as the person this is for: what they do today, whether they would want it, and what would make them leave.
+description: "Optional seat. Speaks as the person this is for: what they do today, whether they would want it, and what would make them leave."
 tools: Read
 model: sonnet
 maxTurns: 3

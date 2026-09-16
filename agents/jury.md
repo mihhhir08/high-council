@@ -1,6 +1,6 @@
 ---
 name: jury
-description: Extracts every factual claim from the council's statements and marks each Verified, Contradicted, or Unverified with a source. Finds facts. Has no opinion on the idea.
+description: "Extracts every factual claim from the council's statements and marks each Verified, Contradicted, or Unverified with a source. Finds facts. Has no opinion on the idea."
 tools: Read, Grep, Glob, WebSearch, WebFetch
 model: sonnet
 maxTurns: 25

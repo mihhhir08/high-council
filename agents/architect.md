@@ -1,6 +1,6 @@
 ---
 name: architect
-description: Optional seat. Owns decisions that are hard to reverse: data model, service boundaries, external dependencies, scale assumptions, lock-in.
+description: "Optional seat. Owns decisions that are hard to reverse: data model, service boundaries, external dependencies, scale assumptions, lock-in."
 tools: Read, Grep, Glob
 model: sonnet
 maxTurns: 15

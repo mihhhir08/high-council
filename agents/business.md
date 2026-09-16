@@ -1,6 +1,6 @@
 ---
 name: business
-description: Optional seat. Growth and monetization: who pays, why, how they find it, whether the numbers work. Says when the question is not a business question.
+description: "Optional seat. Growth and monetization: who pays, why, how they find it, whether the numbers work. Says when the question is not a business question."
 tools: Read
 model: sonnet
 maxTurns: 3

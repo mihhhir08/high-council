@@ -1,6 +1,6 @@
 ---
 name: security
-description: Optional seat. Threat model: assets, actors, entry points, worst credible outcome. Scales its concern to the stakes and says when security is not the deciding factor.
+description: "Optional seat. Threat model: assets, actors, entry points, worst credible outcome. Scales its concern to the stakes and says when security is not the deciding factor."
 tools: Read, Grep, Glob
 model: sonnet
 maxTurns: 15

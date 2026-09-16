@@ -1,6 +1,6 @@
 ---
 name: researcher
-description: Gathers prior art, existing solutions, relevant numbers, and repo facts into a sourced fact sheet before the council debates. Has no opinion.
+description: "Gathers prior art, existing solutions, relevant numbers, and repo facts into a sourced fact sheet before the council debates. Has no opinion."
 tools: WebSearch, WebFetch, Read, Grep, Glob
 model: sonnet
 maxTurns: 25

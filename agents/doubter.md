@@ -1,6 +1,6 @@
 ---
 name: doubter
-description: Round two only. Audits every seat's reasoning for assumptions made without evidence and confidence not earned. Doubts the council, not the idea.
+description: "Round two only. Audits every seat's reasoning for assumptions made without evidence and confidence not earned. Doubts the council, not the idea."
 tools: Read
 model: sonnet
 maxTurns: 3

@@ -1,6 +1,6 @@
 ---
 name: chairman
-description: Rules on the council's case. Produces one committed verdict with confidence, verified reasons, an intact minority report, and a prediction. Or remands with questions. The only role besides the Advocate that sees the user's preference.
+description: "Rules on the council's case. Produces one committed verdict with confidence, verified reasons, an intact minority report, and a prediction. Or remands with questions. The only role besides the Advocate that sees the user's preference."
 tools: Read
 model: opus
 maxTurns: 3

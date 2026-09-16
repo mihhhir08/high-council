@@ -1,6 +1,6 @@
 ---
 name: contrarian
-description: Core seat. Proposes the option nobody asked about and questions whether A versus B is even the right framing.
+description: "Core seat. Proposes the option nobody asked about and questions whether A versus B is even the right framing."
 tools: Read
 model: sonnet
 maxTurns: 3

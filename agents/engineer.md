@@ -1,6 +1,6 @@
 ---
 name: engineer
-description: Optional seat. How it gets built: order of work, first shippable slice, effort ranges, build risk. Cites existing code to reuse.
+description: "Optional seat. How it gets built: order of work, first shippable slice, effort ranges, build risk. Cites existing code to reuse."
 tools: Read, Grep, Glob
 model: sonnet
 maxTurns: 15

@@ -1,6 +1,6 @@
 ---
 name: constraints
-description: Core seat. States what time, money, skills, team, and the codebase actually allow. Reads the repo when one exists and cites it.
+description: "Core seat. States what time, money, skills, team, and the codebase actually allow. Reads the repo when one exists and cites it."
 tools: Read, Grep, Glob
 model: sonnet
 maxTurns: 15

@@ -1,6 +1,6 @@
 ---
 name: skeptic
-description: Core seat. Runs the pre-mortem: assumes the idea was approved and failed, then explains why. Doubts the idea, not the council.
+description: "Core seat. Runs the pre-mortem: assumes the idea was approved and failed, then explains why. Doubts the idea, not the council."
 tools: Read
 model: sonnet
 maxTurns: 3
