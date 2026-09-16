@@ -77,8 +77,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .hero h1{font-size:clamp(3.1rem,8.2vw,7.4rem);line-height:.94;text-wrap:balance}
 .hero h1 em{font-size:1em;color:var(--red)}
 .hero .lede{margin-top:1.75rem;font-size:clamp(1.15rem,1.6vw,1.4rem);line-height:1.5;color:var(--ink-2);max-width:34ch;text-wrap:pretty}
-.install{margin-top:2.25rem;display:inline-flex;align-items:stretch;border:1px solid var(--rule-strong);background:var(--paper-2);max-width:100%}
-.install code{font-family:var(--mono);font-size:.86rem;padding:.9rem 1.1rem;white-space:nowrap;overflow-x:auto;display:block}
+.install{margin-top:2.25rem;display:flex;width:fit-content;align-items:stretch;border:1px solid var(--rule-strong);background:var(--paper-2);max-width:100%}
+.install code{font-family:var(--mono);font-size:.86rem;padding:.9rem 1.1rem;white-space:nowrap;overflow-x:auto;display:block;min-width:0}
 .install code::before{content:"$ ";color:var(--red)}
 .install button{
   font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;
@@ -126,7 +126,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .cursor{display:inline-block;width:.55em;height:1.05em;background:var(--ink);vertical-align:-.15em;margin-left:.15rem;animation:blink 1.1s steps(2) infinite}
 @keyframes blink{to{visibility:hidden}}
 @media(max-width:900px){
-  .hero .wrap{grid-template-columns:1fr}
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
   .transcript{transform:rotate(-.6deg);margin-top:1rem}
   .stamp{right:.5rem;bottom:-1.2rem}
 }
@@ -144,15 +144,15 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 
 /* section frame */
 section{padding:clamp(4rem,8vw,7.5rem) 0;border-top:1px solid var(--rule)}
-.sec-head{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(1.5rem,4vw,4rem);margin-bottom:clamp(2.5rem,5vw,4.5rem)}
-.sec-head h2{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1;text-wrap:balance}
+.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(1.5rem,4vw,4rem);margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+.sec-head h2{font-size:clamp(2.4rem,4.6vw,3.7rem);line-height:1;text-wrap:balance}
 .sec-head p{color:var(--ink-2);font-size:1.15rem;max-width:52ch;text-wrap:pretty;align-self:end}
-@media(max-width:800px){.sec-head{grid-template-columns:1fr}}
+@media(max-width:800px){.sec-head{grid-template-columns:minmax(0,1fr)}}
 
 /* docket */
 .docket{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(1.5rem,4vw,4rem)}
 .docket .sticky{position:sticky;top:2rem;align-self:start}
-.docket .sticky h2{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1}
+.docket .sticky h2{font-size:clamp(2.4rem,4.6vw,3.7rem);line-height:1}
 .docket .sticky p{margin-top:1.25rem;color:var(--ink-2);max-width:32ch;text-wrap:pretty}
 .steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule-strong)}
 .steps li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
@@ -161,7 +161,7 @@ section{padding:clamp(4rem,8vw,7.5rem) 0;border-top:1px solid var(--rule)}
 .steps h3 em{color:var(--ink-2)}
 .steps p{margin-top:.5rem;color:var(--ink-2);max-width:56ch;text-wrap:pretty}
 .steps .only{font-family:var(--mono);font-size:.68rem;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase;margin-top:.55rem}
-@media(max-width:800px){.docket{grid-template-columns:1fr}.docket .sticky{position:static}.steps li{grid-template-columns:3.6rem 1fr;gap:1rem}}
+@media(max-width:800px){.docket{grid-template-columns:minmax(0,1fr)}.docket .sticky{position:static}.steps li{grid-template-columns:3.6rem minmax(0,1fr);gap:1rem}}
 
 /* chamber */
 .chamber{background:var(--chamber);color:var(--chamber-ink);border-top:0;position:relative;overflow:hidden}
@@ -252,12 +252,12 @@ td code{font-family:var(--mono);font-size:.8rem;background:var(--paper-2);paddin
 /* install */
 .get{background:var(--chamber);color:var(--chamber-ink);border-top:0}
 .get .eyebrow{color:var(--chamber-ink-2)}.get .eyebrow::before{background:var(--chamber-ink-2)}
-.get h2{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1;margin-top:1rem;text-wrap:balance}
+.get h2{font-size:clamp(2.4rem,4.6vw,3.7rem);line-height:1;margin-top:1rem;text-wrap:balance}
 .get h2 em{color:var(--red);filter:brightness(1.35)}
-.cmds{margin-top:2.25rem;display:grid;gap:.75rem;max-width:720px}
+.cmds{margin-top:2.25rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;max-width:720px}
 .cmd{display:flex;align-items:stretch;border:1px solid var(--chamber-rule);background:var(--chamber-2)}
 .cmd .s{font-family:var(--mono);font-size:.7rem;color:var(--chamber-ink-2);padding:0 1rem;display:flex;align-items:center;border-right:1px solid var(--chamber-rule);letter-spacing:.1em}
-.cmd code{flex:1;font-family:var(--mono);font-size:.86rem;padding:.9rem 1.1rem;overflow-x:auto;white-space:nowrap}
+.cmd code{flex:1;min-width:0;font-family:var(--mono);font-size:.86rem;padding:.9rem 1.1rem;overflow-x:auto;white-space:nowrap}
 .cmd button{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;border:0;border-left:1px solid var(--chamber-rule);background:transparent;color:var(--chamber-ink);padding:0 1.1rem;cursor:pointer;transition:background .2s,color .2s;flex:none}
 .cmd button:hover,.cmd button.done{background:var(--red);color:#fff}
 .get p.after{margin-top:1.5rem;color:var(--chamber-ink-2);max-width:56ch;text-wrap:pretty}
@@ -335,7 +335,7 @@ footer a:hover{color:var(--ink)}
 <section class="chamber" id="bench">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="eyebrow rv">The bench</div><h2 class="rv" style="margin-top:1rem">Ten seats. <br>Each owns one thing.</h2></div>
+      <div><div class="eyebrow rv">The bench</div><h2 class="rv" style="margin-top:1rem">Ten seats. <br>One job each.</h2></div>
       <p class="rv">Four sit on every question. Five are seated when the Clerk decides the question earns them. One sits only in round two, and argues with nobody about the idea.</p>
     </div>
     <div class="bench">
@@ -404,8 +404,8 @@ footer a:hover{color:var(--ink)}
 <section id="why">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="eyebrow rv">Why it does not just agree</div><h2 class="rv" style="margin-top:1rem">Seven agents with <br>different moods would <br>still agree with you.</h2></div>
-      <p class="rv">Personas are not the fix. These mechanics are. Each one closes a door the answer could have bent through.</p>
+      <div><div class="eyebrow rv">Why it does not just agree</div><h2 class="rv" style="margin-top:1rem">Personas are <br>not the fix.</h2></div>
+      <p class="rv">Seven agents with different moods would still agree with you. These six mechanics are what stop it. Each one closes a door the answer could have bent through.</p>
     </div>
     <div class="mech">
       <div class="rv"><span class="num">i.</span><h3>Blinding</h3><p>The Clerk strips your preference before any seat reads the question. Only the Advocate and the Chairman see it, and the Chairman must say how it was weighted.</p></div>
