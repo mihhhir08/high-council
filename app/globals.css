@@ -54,8 +54,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4
 .brand svg{width:1.7rem;height:1.7rem}
 .navlinks{display:flex;gap:1.75rem;align-items:center;font-family:var(--mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
 .navlinks a{position:relative;padding-bottom:2px}
-.navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--ink);transition:width .35s cubic-bezier(.2,.8,.2,1)}
-.navlinks a:hover::after{width:100%}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.navlinks a:hover::after{transform:scaleX(1)}
 @media(max-width:640px){.navlinks a:not(.gh){display:none}}
 
 /* hero */
