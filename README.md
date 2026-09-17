@@ -40,6 +40,8 @@ Two approvals. No signal.
 
 ## Install
 
+**Claude Code**
+
 ```
 /plugin marketplace add mihhhir08/high-council
 /plugin install high-council@high-council
@@ -52,6 +54,20 @@ Restart Claude Code, then put something to the council:
 ```
 
 Saying it in plain words works too: *ask the council whether we should…*
+
+**Codex**
+
+Codex reads the same marketplace, but its plugins cannot carry agents, so the
+fourteen roles are installed once from a checkout:
+
+```
+codex plugin marketplace add mihhhir08/high-council
+git clone https://github.com/mihhhir08/high-council
+cd high-council && bash codex/install.sh
+```
+
+That writes `council_*.toml` into `~/.codex/agents/`. Then ask for it in plain
+words: *convene the council on …* — Codex has no slash command for it.
 
 ## What comes back
 

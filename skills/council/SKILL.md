@@ -13,6 +13,32 @@ The user's request is: `$ARGUMENTS`
 If that is empty, use the text of their message after `/council`, or the idea
 they asked you to take to the council.
 
+## 0. Which platform you are on
+
+The pipeline below is identical on every platform. Only the way you spawn a
+role changes.
+
+| | Claude Code | Codex |
+|---|---|---|
+| Spawn a role | Task tool, `subagent_type: "high-council:<role>"` | ask for the agent by name, `council_<role>`, underscores not hyphens |
+| A parallel round | several Task calls in one message | ask for those seats to run as parallel subagents |
+| Roles are defined in | `agents/*.md`, shipped with this plugin | `~/.codex/agents/council_*.toml` |
+
+Codex plugins cannot carry agents, so on Codex the roles are installed once
+from a checkout of the repo with `bash codex/install.sh`.
+
+If you are on Codex and `~/.codex/agents/` holds no `council_*.toml` files,
+stop and say so. Do not play the seats yourself inside one context. A council
+argued in a single context has read the user's preference and every other
+seat's argument before writing a word, which removes the blinding and the
+isolation that the verdict depends on. A fake council is worse than none,
+because it looks like a second opinion.
+
+Codex caps how many agent threads run at once
+(`agents.max_concurrent_threads_per_session`). If a round needs more seats
+than the cap allows, spawn them in batches and wait for each batch before
+starting the next. Seats must still not see each other's round one output.
+
 ## 1. Mode
 
 The first word of the request selects the mode. Strip it from the idea.

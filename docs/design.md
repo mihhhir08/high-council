@@ -159,6 +159,10 @@ high-council/
   skills/council/SKILL.md           orchestrator, exposed as /council
   agents/*.md                       one file per role
   docs/design.md                    these notes
+  codex/agents/*.toml               same roles, generated for Codex
+  codex/install.sh                  copies them into ~/.codex/agents/
+  scripts/build-codex-agents.mjs    generator, keeps the two in sync
+  plugin.json                       portable manifest (Codex)
   app/, public/                     landing page (Next.js, deployed on Vercel)
   README.md, LICENSE
 ```
