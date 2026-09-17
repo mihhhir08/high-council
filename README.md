@@ -19,6 +19,11 @@
   <a href="#why-it-does-not-just-agree">Why it works</a>
 </p>
 
+<p align="center">
+  <code>/plugin marketplace add mihhhir08/high-council</code><br/>
+  <code>/plugin install high-council@high-council</code>
+</p>
+
 ---
 
 ## The problem
@@ -207,4 +212,4 @@ Design notes live in [docs/design.md](docs/design.md). Issues and pull requests
 are welcome — the most useful one is a decision log entry where the council got
 it wrong, with what it missed.
 
-MIT licensed.
+MIT licensed. Built by [Mihirsinh Chavda](https://mihirsinhchavda.com).

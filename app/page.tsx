@@ -5,6 +5,7 @@ import Interactions from "./interactions";
 type Style = CSSProperties & Record<`--${string}`, string | number>;
 
 const REPO = "https://github.com/mihhhir08/high-council";
+const PORTFOLIO = "https://mihirsinhchavda.com";
 
 function Mark() {
   return (
@@ -61,14 +62,24 @@ export default function Page() {
               checks the facts, and a chairman hands down one committed verdict, with the strongest
               case against it attached.
             </p>
-            <div className="install rv" style={{ "--i": 3 } as Style}>
-              <code id="c0">/plugin marketplace add mihhhir08/high-council</code>
-              <button data-copy="c0" aria-label="Copy install command">
-                Copy
-              </button>
+            <div className="install-block rv" style={{ "--i": 3 } as Style}>
+              <div className="install">
+                <span className="s">01</span>
+                <code id="c0">/plugin marketplace add mihhhir08/high-council</code>
+                <button data-copy="c0" aria-label="Copy marketplace command">
+                  Copy
+                </button>
+              </div>
+              <div className="install">
+                <span className="s">02</span>
+                <code id="c1">/plugin install high-council@high-council</code>
+                <button data-copy="c1" aria-label="Copy install command">
+                  Copy
+                </button>
+              </div>
             </div>
             <p className="meta rv" style={{ "--i": 4 } as Style}>
-              MIT · Markdown only · No runtime · Works on an empty folder
+              Restart Claude Code, then <code>/council</code> · MIT · Works on an empty folder
             </p>
           </div>
           <div className="rv" style={{ "--i": 2 } as Style}>
@@ -593,22 +604,22 @@ export default function Page() {
           <div className="cmds">
             <div className="cmd rv">
               <span className="s">01</span>
-              <code id="c1">/plugin marketplace add mihhhir08/high-council</code>
-              <button data-copy="c1" aria-label="Copy">
-                Copy
-              </button>
-            </div>
-            <div className="cmd rv">
-              <span className="s">02</span>
-              <code id="c2">/plugin install high-council@high-council</code>
+              <code id="c2">/plugin marketplace add mihhhir08/high-council</code>
               <button data-copy="c2" aria-label="Copy">
                 Copy
               </button>
             </div>
             <div className="cmd rv">
-              <span className="s">03</span>
-              <code id="c3">/council should we rewrite the API in Go or keep Node?</code>
+              <span className="s">02</span>
+              <code id="c3">/plugin install high-council@high-council</code>
               <button data-copy="c3" aria-label="Copy">
+                Copy
+              </button>
+            </div>
+            <div className="cmd rv">
+              <span className="s">03</span>
+              <code id="c4">/council should we rewrite the API in Go or keep Node?</code>
+              <button data-copy="c4" aria-label="Copy">
                 Copy
               </button>
             </div>
@@ -625,7 +636,11 @@ export default function Page() {
           <span>
             High Council · MIT ·{" "}
             <a href={REPO} target="_blank" rel="noopener">
-              github.com/mihhhir08/high-council
+              GitHub
+            </a>{" "}
+            ·{" "}
+            <a href={PORTFOLIO} target="_blank" rel="noopener">
+              Built by Mihirsinh Chavda
             </a>
           </span>
           <span>Built for Claude Code. Not affiliated with Anthropic.</span>
