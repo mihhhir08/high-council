@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/mark.svg" width="72" alt="" />
+  <img src="public/mark.svg" width="72" alt="" />
 </p>
 
 <h1 align="center">High Council</h1>
