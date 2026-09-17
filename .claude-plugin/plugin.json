@@ -6,8 +6,15 @@
     "name": "Mihirsinh Chavda",
     "url": "https://github.com/mihhhir08"
   },
-  "homepage": "https://github.com/mihhhir08/high-council",
+  "homepage": "https://high-council.vercel.app",
   "repository": "https://github.com/mihhhir08/high-council",
   "license": "MIT",
-  "keywords": ["decision-making", "multi-agent", "anti-sycophancy", "council", "verdict", "devils-advocate"]
+  "keywords": [
+    "decision-making",
+    "multi-agent",
+    "anti-sycophancy",
+    "council",
+    "verdict",
+    "devils-advocate"
+  ]
 }
